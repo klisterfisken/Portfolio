@@ -6,3 +6,10 @@
 --dark-amethyst: #21194c;
 https://coolors.co/eb8c60-ffe2d1-eadffc-9889df-21194c
 */
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Lexend", sans-serif;
+}
