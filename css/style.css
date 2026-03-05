@@ -16,6 +16,33 @@
     font-family: "Lexend", sans-serif;
 }
 
+h1 {
+    color: var(--lavender-veil);
+    font-size: 7rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: "Cascadia Mono", sans-serif;
+    font-size: 4rem;
+    color: var(--soft-periwinkle);
+    font-weight: 600;
+}
+
+button {
+    border: 0px;
+    background-color: var(--powder-petal);
+    color: var(--dark-amethyst);
+    border-radius: 100px;
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
+}
+
+button.highlight {
+    background-color: var(--tangerine-dream);
+    color: var(--white-smoke);
+}
+
 .hero {
     height: 100vh;
     background-color: var(--dark-amethyst);
@@ -31,4 +58,16 @@
     width: 100vw;
     margin-top: -5px;
     background-color: #ffffff3d;
+}
+
+.hero-text {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    gap: 2rem;
 }
