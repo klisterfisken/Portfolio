@@ -23,5 +23,12 @@
 
 .header-img {
     width: 100vw;
-    position: fixed;
+    z-index: 1;
+}
+
+.header-divider {
+    height: 8vh;
+    width: 100vw;
+    margin-top: -5px;
+    background-color: #ffffff3d;
 }
