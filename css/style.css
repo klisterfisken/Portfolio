@@ -44,6 +44,8 @@ button.highlight {
 }
 
 .hero {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     background-color: var(--dark-amethyst);
 }
@@ -58,15 +60,19 @@ button.highlight {
 }
 
 .header-divider {
-    height: 8vh;
+    height: 6rem;
     width: 100vw;
     margin-top: -5px;
     background-color: #ffffff3d;
 }
 
 .hero-text {
-    text-align: center;
-    margin: 4rem 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10rem;
+    margin: auto;
 }
 
 nav {
