@@ -91,6 +91,13 @@ nav {
     gap: 2rem;
 }
 
+.about-me {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--powder-petal);
+}
+
 @media (min-aspect-ratio: 7/9) {
     .below-hero {
         display: none;
