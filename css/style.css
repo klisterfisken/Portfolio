@@ -40,7 +40,8 @@ h2 {
 
 h3 {
     font-family: "Cascadia Mono", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
     color: var(--tangerine-dream);
 }
 
@@ -155,11 +156,7 @@ nav {
     flex-direction: column;
     height: 100vh;
     background-color: var(--powder-petal);
-}
-
-.about-me div {
-    height: auto;
-    flex-wrap: wrap;
+    padding: 5rem;
 }
 
 .about-me h1 {
@@ -171,4 +168,28 @@ nav {
     color: var(--tangerine-dream);
     font-size: 2rem;
     font-weight: 400;
+    padding: 0px 20px;
+}
+
+.about-me p {
+    padding: 0px 20px;
+}
+
+.quick-facts p {
+    display: flex;
+    color: var(--powder-petal);
+}
+
+.fact-card {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    background-color: var(--saddle-brown);
+    margin: 10px 0;
+    padding: 5px 20px;
+    border-radius: 100px
+}
+
+.portrait {
+    display: none;
 }
