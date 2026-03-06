@@ -119,4 +119,23 @@ nav {
         max-height: 74px;
     }
 
+    .header-divider {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header-divider>nav {
+        width: 40vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5%;
+        gap: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
 }
