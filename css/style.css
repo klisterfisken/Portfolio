@@ -18,7 +18,7 @@
 
 h1 {
     color: var(--lavender-veil);
-    font-size: 7rem;
+    font-size: 3rem;
     font-weight: 500;
 
     @media (aspect-ratio > 7/9) {
@@ -29,7 +29,7 @@ h1 {
 
 h2 {
     font-family: "Cascadia Mono", sans-serif;
-    font-size: 4rem;
+    font-size: 2rem;
     color: var(--soft-periwinkle);
     font-weight: 600;
 
@@ -54,9 +54,9 @@ button {
     border: 0px;
     background-color: var(--powder-petal);
     color: var(--dark-amethyst);
-    border-radius: 100px;
-    padding: 1.5rem 2rem;
-    font-size: 2rem;
+    border-radius: 50px;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.2rem;
 
     @media (aspect-ratio > 7/9) {
         font-size: 1rem;
@@ -108,12 +108,13 @@ button.highlight {
 }
 
 .header-divider {
-    height: 6rem;
+    height: 3rem;
     width: 100vw;
     margin-top: -5px;
     background-color: #565077;
 
     @media (aspect-ratio > 7/9) {
+        height: auto;
         display: flex;
         justify-content: flex-end;
     }
@@ -135,14 +136,14 @@ button.highlight {
 nav {
     display: flex;
     justify-content: center;
-    margin: 2rem;
-    gap: 2rem;
+    margin: 1rem;
+    gap: 1rem;
 
 }
 
 .header-divider nav {
     @media (aspect-ratio > 7/9) {
-        width: 40vw;
+        min-width: 40vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -151,12 +152,14 @@ nav {
     }
 }
 
+
+
 .about-me {
     display: flex;
     flex-direction: column;
     height: 100vh;
     background-color: var(--powder-petal);
-    padding: 5rem;
+    padding: 8%;
 }
 
 .about-me h1 {
@@ -176,14 +179,10 @@ nav {
 }
 
 .quick-facts p {
-    display: flex;
     color: var(--powder-petal);
 }
 
 .fact-card {
-    display: flex;
-    gap: 1rem;
-    align-items: baseline;
     background-color: var(--saddle-brown);
     margin: 10px 0;
     padding: 5px 20px;
