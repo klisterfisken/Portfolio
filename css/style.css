@@ -178,13 +178,16 @@ nav {
 
 .quick-facts p {
     color: var(--powder-petal);
+    font-size: 1.3rem;
 }
 
 .fact-card {
+    display: flex;
+    flex-wrap: wrap;
     background-color: var(--saddle-brown);
     margin: 10px 0;
     padding: 5px 20px;
-    border-radius: 100px
+    border-radius: 32px
 }
 
 .portrait {
