@@ -171,6 +171,10 @@ nav {
 
 .about-me div.text-about-me {
     grid-area: text-about-me;
+
+    p {
+        margin: 1rem 0px;
+    }
 }
 
 .about-me h1 {
@@ -187,6 +191,7 @@ nav {
 
 .about-me p {
     padding: 0px 20px;
+    font-size: 1.3rem;
 }
 
 .about-me div.quick-facts {
@@ -195,10 +200,8 @@ nav {
 
     p {
         color: var(--powder-petal);
-        font-size: 1.3rem;
     }
 }
-
 
 .fact-card {
     display: flex;
