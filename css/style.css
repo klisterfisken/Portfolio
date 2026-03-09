@@ -155,9 +155,9 @@ nav {
 .about-me {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--powder-petal);
-    padding: 8%;
+    padding: 5vw;
 
     @media (aspect-ratio > 10/7) {
         display: grid;
@@ -165,17 +165,11 @@ nav {
             "portrait text-about-me"
             "portrait quick-facts";
         grid-template-columns: 2fr 3fr;
-        gap: 3px;
-        padding: 5px;
+        gap: 12px;
     }
 }
 
-.about-me div {
-    padding: 10px;
-}
-
 .about-me div.text-about-me {
-    border: 1px solid red;
     grid-area: text-about-me;
 }
 
@@ -197,11 +191,11 @@ nav {
 
 .about-me div.quick-facts {
     grid-area: quick-facts;
+    margin: 0px 12px;
 
     p {
         color: var(--powder-petal);
         font-size: 1.3rem;
-        text-align: center;
     }
 }
 
@@ -216,11 +210,12 @@ nav {
 }
 
 .portrait {
+    margin-top: 20px;
 
     @media (aspect-ratio > 10/7) {
         order: -1;
         grid-area: portrait;
-        text-align: center;
+        margin-top: 0px;
     }
 }
 
