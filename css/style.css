@@ -40,7 +40,7 @@ h2 {
 
 h3 {
     font-family: "Cascadia Mono", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 400;
     color: var(--tangerine-dream);
 }
@@ -158,6 +158,25 @@ nav {
     height: 100vh;
     background-color: var(--powder-petal);
     padding: 8%;
+
+    @media (aspect-ratio > 10/7) {
+        display: grid;
+        grid-template-areas:
+            "portrait text-about-me"
+            "portrait quick-facts";
+        grid-template-columns: 2fr 3fr;
+        gap: 3px;
+        padding: 5px;
+    }
+}
+
+.about-me div {
+    padding: 10px;
+}
+
+.about-me div.text-about-me {
+    border: 1px solid red;
+    grid-area: text-about-me;
 }
 
 .about-me h1 {
@@ -176,10 +195,16 @@ nav {
     padding: 0px 20px;
 }
 
-.quick-facts p {
-    color: var(--powder-petal);
-    font-size: 1.3rem;
+.about-me div.quick-facts {
+    grid-area: quick-facts;
+
+    p {
+        color: var(--powder-petal);
+        font-size: 1.3rem;
+        text-align: center;
+    }
 }
+
 
 .fact-card {
     display: flex;
@@ -187,9 +212,19 @@ nav {
     background-color: var(--saddle-brown);
     margin: 10px 0;
     padding: 5px 20px;
-    border-radius: 32px
+    border-radius: 32px;
 }
 
 .portrait {
-    display: none;
+
+    @media (aspect-ratio > 10/7) {
+        order: -1;
+        grid-area: portrait;
+        text-align: center;
+    }
+}
+
+.portrait img {
+    width: 100%;
+    height: auto;
 }
