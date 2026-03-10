@@ -57,6 +57,7 @@ button {
     border-radius: 50px;
     padding: 0.8rem 1.2rem;
     font-size: 1.2rem;
+    cursor: pointer;
 
     @media (aspect-ratio > 7/9) {
         font-size: 1rem;
@@ -117,7 +118,7 @@ button.highlight {
 
 .header-divider {
     height: 3rem;
-    width: 100vw;
+    width: 100%;
     margin-top: -5px;
     background-color: #565077;
 
