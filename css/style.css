@@ -50,22 +50,43 @@ p {
     font-weight: 300;
 }
 
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
 button {
     border: 0px;
     background-color: var(--powder-petal);
     color: var(--dark-amethyst);
+    border: 2px solid var(--powder-petal);
     border-radius: 50px;
-    padding: 0.8rem 1.2rem;
+    padding: 0.7rem 1.1rem;
     font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+    overflow: hidden;
 
     @media (aspect-ratio > 7/9) {
         font-size: 1rem;
         padding: 1rem;
     }
+
+    &:hover {
+        background-color: var(--soft-periwinkle);
+    }
 }
 
 button.highlight {
     background-color: var(--tangerine-dream);
+    border: 2px solid var(--tangerine-dream);
+
+    &:hover {
+        background-color: var(--dark-amethyst);
+        border: 2px solid var(--soft-periwinkle);
+        color: var(--lavender-veil)
+    }
 }
 
 .hero {
@@ -117,7 +138,7 @@ button.highlight {
 
 .header-divider {
     height: 3rem;
-    width: 100vw;
+    width: 100%;
     margin-top: -5px;
     background-color: #565077;
 
