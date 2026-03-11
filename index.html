@@ -87,12 +87,12 @@
     <div class="contact-me" id="contact-me">
         <div class="contact-form">
             <form action="">
-                <label for="name">Namn</label>
-                <input type="text" id="name" name="Namn" value="Fyll i ditt namn">
-                <label for="company">Företag</label>
-                <input type="text" id="company" name="Företag" value="Fyll i eventuellt företag">
-                <label for="message">Meddelande</label>
-                <input type="text" id="message" name="Meddelande" value="Fyll i ditt meddelande">
+                <label for="name" class="required">Namn</label>
+                <input type="text" id="name" name="Namn" placeholder="Fyll i ditt namn" required>
+                <label for="email" class="required">E-post</label>
+                <input type="email" id="email" name="E-post" placeholder="Fyll i din e-postadress" required>
+                <label for="message" class="required">Meddelande</label>
+                <textarea id="message" name="Meddelande" required></textarea>
                 <input type="submit" value="Skicka">
             </form>
         </div>

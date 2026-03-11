@@ -278,16 +278,33 @@ label {
 }
 
 input[type=text],
-select {
-    color: var(--soft-periwinkle);
+input[type=email],
+textarea {
+    color: var(--dark-amethyst);
+    background-color: var(--white-smoke);
     font-weight: 300;
     width: 100%;
     padding: 12px;
-    margin: 8px 0;
+    margin: 8px 0px 2rem 0px;
     display: inline-block;
-    border: 0px;
+    border: 2px solid var(--white-smoke);
     border-radius: 8px;
     box-sizing: border-box;
+}
+
+.required:after {
+    content: " *";
+    color: var(--tangerine-dream);
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid var(--soft-periwinkle);
+}
+
+textarea {
+    resize: vertical;
 }
 
 input[type=submit] {
