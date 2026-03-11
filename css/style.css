@@ -280,11 +280,12 @@ nav {
     gap: 1rem;
     border: 2px solid var(--tangerine-dream);
     margin: 2rem;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
 
     @media (aspect-ratio > 7/9) and (aspect-ratio < 10/7) {
         flex-direction: row;
+        align-items: flex-end;
     }
 
     @media (aspect-ratio > 10/7) {
