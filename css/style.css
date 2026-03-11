@@ -244,6 +244,7 @@ nav {
 
 .portrait {
     margin-top: 20px;
+    align-self: center;
 
     @media (aspect-ratio > 10/7) {
         order: -1;
@@ -270,8 +271,6 @@ nav {
 .project-card-container {
     background-color: var(--powder-petal);
     margin: 2rem;
-    max-width: 1200px;
-    height: auto;
 }
 
 .project-card {
@@ -384,6 +383,7 @@ input[type=submit] {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 input[type=submit]:hover {
