@@ -278,12 +278,24 @@ nav {
     margin: 2rem;
     padding: 2rem;
     border-radius: 8px;
+
+    @media (aspect-ratio > 7/9) and (aspect-ratio < 10/7) {
+        display: grid;
+        grid-template-areas:
+            "project-img-div project-name"
+            "project-img-div project-description";
+    }
 }
 
 .project-img-div {
     background-color: var(--white-smoke);
     height: 160px;
     width: 160px;
+    display: none;
+
+    @media (aspect-ratio > 7/9) {
+        display: block;
+    }
 }
 
 .project-card p {
