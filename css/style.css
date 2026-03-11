@@ -263,11 +263,16 @@ nav {
 
 .projects {
     background-color: var(--tangerine-dream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-card-container {
     background-color: var(--powder-petal);
     margin: 2rem;
+    max-width: 1200px;
+    height: auto;
 }
 
 .project-card {
@@ -280,10 +285,12 @@ nav {
     border-radius: 8px;
 
     @media (aspect-ratio > 7/9) and (aspect-ratio < 10/7) {
-        display: grid;
-        grid-template-areas:
-            "project-img-div project-name"
-            "project-img-div project-description";
+        flex-direction: row;
+    }
+
+    @media (aspect-ratio > 10/7) {
+        max-width: 35%;
+        flex-wrap: wrap;
     }
 }
 
@@ -292,6 +299,7 @@ nav {
     height: 160px;
     width: 160px;
     display: none;
+    flex-shrink: 0;
 
     @media (aspect-ratio > 7/9) {
         display: block;
@@ -300,7 +308,10 @@ nav {
 
 .project-card p {
     font-size: 1rem;
+    margin-top: 0.5rem;
 }
+
+
 
 .contact-me {
     display: flex;
