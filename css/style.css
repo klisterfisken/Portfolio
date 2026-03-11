@@ -187,7 +187,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-content: center;
-    padding: 5vw;
+    margin: 2rem;
 
     @media (aspect-ratio > 10/7) {
         display: grid;
@@ -261,16 +261,29 @@ nav {
 }
 
 .contact-me {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
     background-color: var(--soft-periwinkle);
     color: var(--dark-amethyst);
     font-weight: 400;
 }
 
-form {
+.contact-form {
     background-color: var(--lavender-veil);
-    margin: 5vw;
+    margin: 2rem 2rem 6rem;
     padding: 2rem;
     border-radius: 8px;
+
+    @media (aspect-ratio > 10/7) {
+        width: 750px;
+    }
+}
+
+.form-header {
+    text-align: end;
+    font-size: 3rem;
 }
 
 label {
@@ -285,7 +298,7 @@ textarea {
     font-weight: 300;
     width: 100%;
     padding: 12px;
-    margin: 8px 0px 2rem 0px;
+    margin: 8px 0px 1.5rem 0px;
     display: inline-block;
     border: 2px solid var(--white-smoke);
     border-radius: 8px;
@@ -304,6 +317,7 @@ textarea:focus {
 }
 
 textarea {
+    height: 150px;
     resize: vertical;
 }
 
