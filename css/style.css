@@ -260,6 +260,13 @@ nav {
     border-radius: 8px;
 }
 
+
+.projects {
+    background-color: var(--tangerine-dream);
+}
+
+
+
 .contact-me {
     display: flex;
     flex-grow: 1;
