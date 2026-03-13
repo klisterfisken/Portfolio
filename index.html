@@ -20,12 +20,36 @@
     <div class="hero">
         <header>
             <div class="header-img">
-                <picture>
-                    <source srcset="images/mh-1.jpg" media="(max-aspect-ratio: 7/9)">
-                    <source srcset="images/dh-1.jpg" id="dh-img">
-                    <img src="images/dh-1.jpg" id="dh-img"
-                        alt="Closeup image of a face peeking up from behind a screen">
-                </picture>
+                <div class="header-container">
+                    <div id="animation-wrapper" class="animation-wrapper">
+
+                        <picture class="anim-frame active">
+                            <source srcset="images/mh-1.jpg" media="(max-aspect-ratio: 7/9)">
+                            <img src="images/dh-1.jpg" alt="Face peeking 1">
+                        </picture>
+
+                        <picture class="anim-frame">
+                            <source srcset="images/mh-2.jpg" media="(max-aspect-ratio: 7/9)">
+                            <img src="images/dh-2.jpg" alt="Face peeking 2">
+                        </picture>
+
+                        <picture class="anim-frame">
+                            <source srcset="images/mh-3.jpg" media="(max-aspect-ratio: 7/9)">
+                            <img src="images/dh-3.jpg" alt="Face peeking 3">
+                        </picture>
+
+                        <picture class="anim-frame">
+                            <source srcset="images/mh-4.jpg" media="(max-aspect-ratio: 7/9)">
+                            <img src="images/dh-4.jpg" alt="Face peeking 4">
+                        </picture>
+
+                        <picture class="anim-frame">
+                            <source srcset="images/mh-5.jpg" media="(max-aspect-ratio: 7/9)">
+                            <img src="images/dh-5.jpg" alt="Face peeking 5">
+                        </picture>
+
+                    </div>
+                </div>
                 <div class="ontop-hero">
                     <h1>Hanna Schiller</h1>
                     <h2>&lt;developer of ideas&gt;</h2>
@@ -166,7 +190,7 @@
             </ul>
         </footer>
     </div>
-    <!-- <script src="index.js"></script> -->
+    <script src="js/index.js"></script>
 </body>
 
 </html>
