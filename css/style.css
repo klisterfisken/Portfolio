@@ -39,12 +39,12 @@ h1 {
 
 h2 {
     font-family: "Cascadia Mono", sans-serif;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: var(--soft-periwinkle);
     font-weight: 600;
 
     @media (aspect-ratio > 10/7) {
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
 }
 
@@ -95,6 +95,8 @@ button {
 button.cv {
     height: 56px;
     width: 56px;
+    padding: 0;
+    text-align: center;
 }
 
 button.highlight {
@@ -110,6 +112,8 @@ button.highlight {
 
 button .fa-file-arrow-down {
     display: none;
+    font-size: 1.1rem;
+    padding: 0;
 }
 
 button:hover a.download {
@@ -118,8 +122,6 @@ button:hover a.download {
 
 button:hover .fa-file-arrow-down {
     display: inline;
-    font-size: 1.1rem;
-    padding: 0;
 }
 
 .hero {
@@ -218,7 +220,7 @@ nav {
             "portrait quick-facts";
         grid-template-columns: 2fr 3fr;
         gap: 12px;
-        max-width: 1200px;
+        max-width: 1000px;
     }
 }
 
@@ -283,6 +285,7 @@ nav {
 }
 
 
+
 .projects,
 .project-header {
     background-color: var(--tangerine-dream);
@@ -296,6 +299,8 @@ nav {
     flex-direction: column;
     background-color: var(--powder-petal);
     padding: 2rem;
+    border-radius: 8px;
+    margin-top: 1rem;
 
     @media (aspect-ratio > 10/7) {
         width: 1200px;
