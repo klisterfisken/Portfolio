@@ -20,40 +20,66 @@
     <div class="hero">
         <header>
             <div class="header-img">
-                <picture>
-                    <source srcset="images/mh-1.jpg" media="(max-aspect-ratio: 7/9)">
-                    <source srcset="images/dh-1.jpg" id="dh-img">
-                    <img src="images/dh-1.jpg" id="dh-img"
-                        alt="Closeup image of a face peeking up from behind a screen">
-                </picture>
+                <div id="animation-wrapper" class="animation-wrapper">
+
+                    <picture class="anim-frame active">
+                        <source srcset="images/mh-1.jpg" media="(max-aspect-ratio: 7/9)">
+                        <img src="images/dh-1.jpg" alt="Face peeking 1">
+                    </picture>
+
+                    <picture class="anim-frame">
+                        <source srcset="images/mh-2.jpg" media="(max-aspect-ratio: 7/9)">
+                        <img src="images/dh-2.jpg" alt="Face peeking 2">
+                    </picture>
+
+                    <picture class="anim-frame">
+                        <source srcset="images/mh-3.jpg" media="(max-aspect-ratio: 7/9)">
+                        <img src="images/dh-3.jpg" alt="Face peeking 3">
+                    </picture>
+
+                    <picture class="anim-frame">
+                        <source srcset="images/mh-4.jpg" media="(max-aspect-ratio: 7/9)">
+                        <img src="images/dh-4.jpg" alt="Face peeking 4">
+                    </picture>
+
+                    <picture class="anim-frame">
+                        <source srcset="images/mh-5.jpg" media="(max-aspect-ratio: 7/9)">
+                        <img src="images/dh-5.jpg" alt="Face peeking 5">
+                    </picture>
+
+                </div>
                 <div class="ontop-hero">
                     <h1>Hanna Schiller</h1>
-                    <h2>developer of ideas</h2>
+                    <h2>&lt;developer of ideas&gt;</h2>
                 </div>
             </div>
             <div class="header-divider">
                 <nav>
                     <button class="highlight"><a href="#about-me">Om mig</a></button>
-                    <button><a href="/files/Hanna Schiller - CV.pdf" download>CV</a></button>
-                    <button>Kontakt</button>
+                    <button class="cv"><a class="download" href="/files/Hanna Schiller - CV.pdf"
+                            aria-label="Ladda ner CV" download>CV</a><a href="/files/Hanna Schiller - CV.pdf"
+                            aria-label="Ladda ner CV" download><i class="fa-solid fa-file-arrow-down"></i></a></button>
+                    <button><a href="#contact-me">Kontakt</a></button>
                 </nav>
             </div>
         </header>
         <div class="below-hero">
             <h1>Hanna Schiller</h1>
-            <h2>developer of ideas</h2>
+            <h2>&lt;developer of ideas&gt;</h2>
             <nav>
                 <button class="highlight"><a href="#about-me">Om mig</a></button>
-                <button><a href="/files/Hanna Schiller - CV.pdf" download>CV</a></button>
-                <button>Kontakt</button>
+                <button class="cv"><a class="download" href="/files/Hanna Schiller - CV.pdf" aria-label="Ladda ner CV"
+                        download>CV</a><a href="/files/Hanna Schiller - CV.pdf" aria-label="Ladda ner CV" download><i
+                            class="fa-solid fa-file-arrow-down" alt="Download CV here"></i></a></button>
+                <button><a href="#contact-me">Kontakt</a></button>
             </nav>
         </div>
     </div>
     <div class="about-me-section" id="about-me">
         <div class="about-me">
             <div class="text-about-me">
-                <h1>&lt;head&gt;</h1>
-                <h2>och vad som rör sig inuti</h2>
+                <h1 class="in-section-h1">&lt;head&gt;</h1>
+                <h2 class="in-section-h2">och vad som rör sig inuti</h2>
                 <div class="body-text-about-me">
                     <p>När man är liten och ny på livet så lär man sig saker om universum genom att utforska, inte
                         sällan genom lek. Hos mig har den nyfikenheten nog aldrig riktigt avtagit. Jag får fler idéer än
@@ -84,6 +110,56 @@
             </div>
         </div>
     </div>
+    <div class="projects">
+        <div class="project-header">
+            <h1 class="in-section-h1">&lt;projekt&gt;</h1>
+            <h2 class="in-section-h2">i olika stadier</h2>
+        </div>
+        <div class="project-card-container">
+            <div class="project-card">
+                <div class="project-img-div"><img src="" alt=""></div>
+                <div class="project-description">
+                    <h3>./scorekeeper</h3>
+                    <p>Enkel app för att hålla koll på spelare och deras poäng i kortspelet Flip 7.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img-div"><img src="" alt=""></div>
+                <div class="project-description">
+                    <h3>./cripteria</h3>
+                    <p>App för direktmeddelanden där end to end-kryptering appliceras.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img-div"><img src="" alt=""></div>
+                <div class="project-description">
+                    <h3>./pattern_library</h3>
+                    <p>Databas över stickbeskrivningar med möjlighet att filtrera data.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img-div"><img src="" alt=""></div>
+                <div class="project-description">
+                    <h3>./systementor_zoo</h3>
+                    <p>Skoluppgift för att testa på HTML och CSS.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img-div"><img src="" alt=""></div>
+                <div class="project-description">
+                    <h3>./todoodle</h3>
+                    <p>En enkel todo-app där användaren kan bocka av uppgifter.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img-div"><img src="" alt=""></div>
+                <div class="project-description">
+                    <h3>./outfit_planner</h3>
+                    <p>Användaren lägger till plagg utifrån färg och värmegrad, planerar outfits därefter.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="contact-me" id="contact-me">
         <div class="contact-form">
             <h2 class="form-header">yes?</h2>
@@ -101,18 +177,18 @@
     <div class="footer">
         <footer>
             <ul class="socials">
-                <li><a href="https://github.com/klisterfisken" target="_blank"><i
+                <li><a href="https://github.com/klisterfisken" aria-label="Besök GitHub" target="_blank"><i
                             class="fa-brands fa-github fa-2xl"></i></a>
                 </li>
-                <li><a href="https://www.linkedin.com/in/hanna-schiller-b2933734b/" target="_blank"><i
-                            class="fa-brands fa-square-linkedin fa-2xl"></i></a></li>
-                <li><a href="https://www.instagram.com/klisterfisken" target="_blank"><i
+                <li><a href="https://www.linkedin.com/in/hanna-schiller-b2933734b/" aria-label="Besök LinkedIn"
+                        target="_blank"><i class="fa-brands fa-square-linkedin fa-2xl"></i></a></li>
+                <li><a href="https://www.instagram.com/klisterfisken" aria-label="Besök Instagram" target="_blank"><i
                             class="fa-brands fa-instagram fa-2xl"></i></a>
                 </li>
             </ul>
         </footer>
     </div>
-    <!-- <script src="index.js"></script> -->
+    <script src="js/index.js"></script>
 </body>
 
 </html>
