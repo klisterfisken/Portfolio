@@ -1,5 +1,5 @@
 const frames = document.querySelectorAll('.anim-frame');
-const scrollSpeed = 50;
+const scrollSpeed = 52;
 
 window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;

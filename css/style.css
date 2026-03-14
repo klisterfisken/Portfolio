@@ -22,7 +22,7 @@ body>div {
     flex-direction: column;
 
     &:not(.hero) {
-        padding: 2rem;
+        padding: 2rem 2rem 6rem 2rem;
     }
 }
 
@@ -321,7 +321,8 @@ nav {
         width: 1000px;
         height: 800px;
         flex-wrap: wrap;
-        align-items: space-between;
+        align-items: center;
+        column-gap: 30px;
     }
 }
 
@@ -383,7 +384,6 @@ nav {
 
 .contact-form {
     background-color: var(--lavender-veil);
-    margin-bottom: 6rem;
     padding: 2rem;
     border-radius: 8px;
 
