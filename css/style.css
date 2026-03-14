@@ -223,6 +223,28 @@ nav {
     background-color: var(--dark-amethyst);
 }
 
+.stacklist {
+    display: flex;
+    justify-content: center;
+}
+
+.stacklist li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--lavender-veil);
+    padding: 1rem;
+    border-radius: 50px;
+    corner-shape: squircle;
+    margin: 0.4rem;
+}
+
+.stacklist img {
+    height: 3rem;
+    width: 3rem;
+}
+
+
 
 
 .about-me-section {
