@@ -217,6 +217,14 @@ nav {
 
 }
 
+
+.techstack {
+    min-height: 30vh;
+    background-color: var(--dark-amethyst);
+}
+
+
+
 .about-me-section {
     justify-content: center;
     align-items: center;
