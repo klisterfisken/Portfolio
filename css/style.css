@@ -21,7 +21,7 @@ body>div {
     display: flex;
     flex-direction: column;
 
-    &:not(.hero) {
+    &:not(.hero, .techstack) {
         padding: 2rem 2rem 6rem 2rem;
     }
 }
@@ -218,35 +218,6 @@ nav {
 }
 
 
-.techstack {
-    min-height: 30vh;
-    background-color: var(--dark-amethyst);
-}
-
-.stacklist {
-    display: flex;
-    justify-content: center;
-}
-
-.stacklist li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--lavender-veil);
-    padding: 1rem;
-    border-radius: 50px;
-    corner-shape: squircle;
-    margin: 0.4rem;
-}
-
-.stacklist img {
-    height: 3rem;
-    width: 3rem;
-}
-
-
-
-
 .about-me-section {
     justify-content: center;
     align-items: center;
@@ -400,6 +371,35 @@ nav {
     margin-top: 0.5rem;
 }
 
+
+.techstack {
+    min-height: auto;
+    padding: 2rem;
+    background-color: var(--lavender-veil);
+}
+
+.stacklist {
+    display: flex;
+    justify-content: center;
+}
+
+.stacklist li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: var(--white-smoke); */
+    padding: 1rem;
+    border-radius: 50px;
+    corner-shape: squircle;
+    margin: 0 1rem;
+    box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1) inset,
+        -0.2rem -0.2rem 0.4rem rgba(255, 255, 255, 0.5) inset;
+}
+
+.stacklist img {
+    height: 3rem;
+    width: 3rem;
+}
 
 
 .contact-me {
