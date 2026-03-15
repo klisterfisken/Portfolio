@@ -378,16 +378,41 @@ nav {
     background-color: var(--lavender-veil);
 }
 
-.stacklist {
+.carousel {
     display: flex;
     justify-content: center;
+    overflow-x: auto;
+
+    @media (width <=1632px) {
+        justify-content: flex-start;
+    }
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.stacklist {
+    display: flex;
+
+    @media (width <=1632px) {
+        animation: spin 30s infinite linear;
+    }
+}
+
+.stacklist.hidden {
+    display: none;
+
+    @media (width <=1632px) {
+        display: flex;
+    }
 }
 
 .stacklist li {
     display: flex;
+    flex: 0 0 5rem;
     align-items: center;
     justify-content: center;
-    /* background-color: var(--white-smoke); */
     padding: 1rem;
     border-radius: 50px;
     corner-shape: squircle;
@@ -399,6 +424,16 @@ nav {
 .stacklist img {
     height: 3rem;
     width: 3rem;
+}
+
+@keyframes spin {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
 }
 
 
