@@ -218,6 +218,52 @@ nav {
 }
 
 
+.testimonials {
+    background-color: var(--dark-amethyst);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-container {
+    height: 100%;
+}
+
+.quote-card {
+    width: 80vw;
+    padding: 60px 30px 50px;
+    border-radius: 32px;
+    background-color: #565077;
+    margin: 1rem 0;
+    position: relative;
+    text-align: center;
+}
+
+.quote-card q {
+    text-align: center;
+    color: var(--lavender-veil);
+}
+
+q:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 0.5rem;
+    left: 1.5rem;
+
+    content: "\f10d";
+    font-size: 6rem;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.quote-card p {
+    text-align: right;
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
 .about-me-section {
     justify-content: center;
     align-items: center;
