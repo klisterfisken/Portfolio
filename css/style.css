@@ -220,6 +220,7 @@ nav {
 
 
 .testimonials {
+    min-height: 50vh;
     background-color: var(--dark-amethyst);
     display: flex;
     align-items: center;
@@ -240,6 +241,10 @@ nav {
     anchor-name: --carousel;
 
     scroll-marker-group: after;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 
     &::scroll-marker-group {
         display: flex;
@@ -268,15 +273,13 @@ nav {
     }
 
     &::scroll-button(right) {
-        content: "\f0da";
+        content: "\f105";
         position-area: center right;
-        corner-shape: round bevel bevel round;
     }
 
     &::scroll-button(left) {
-        content: "\f0d9";
+        content: "\f104";
         position-area: center left;
-        corner-shape: bevel round round bevel;
     }
 }
 
