@@ -22,7 +22,7 @@ body>div {
     display: flex;
     flex-direction: column;
 
-    &:not(.hero, .techstack) {
+    &:not(.hero, .techstack, .footer) {
         padding: 2rem 2rem 6rem 2rem;
     }
 }
@@ -265,6 +265,7 @@ nav {
         padding: 1rem;
         border-radius: 100%;
         border: 0;
+        cursor: pointer;
         z-index: 1;
     }
 
@@ -639,15 +640,24 @@ input[type=submit]:hover {
     min-height: 30vh;
     background-color: var(--dark-amethyst);
     justify-content: center;
+    padding: 2rem;
 }
 
 .socials {
     display: flex;
     justify-content: center;
+    height: 100%;
     gap: 1rem;
 
     i {
 
         color: var(--lavender-veil);
     }
+}
+
+.weather {
+    color: var(--lavender-veil);
+    font-size: 1.2rem;
+    margin-top: 50px;
+    text-align: center;
 }
