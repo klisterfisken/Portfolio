@@ -228,7 +228,6 @@ nav {
 
 .quote-carousel {
     display: grid;
-    gap: 2rem;
     grid-auto-flow: column;
     grid-auto-columns: 100%;
     width: auto;
@@ -253,21 +252,23 @@ nav {
         position: fixed;
         position-anchor: --carousel;
         margin: 1rem;
-        font: inherit;
+        font-family: "FontAwesome";
         background-color: var(--dim-purple);
         color: var(--lavender-veil);
+        width: 46px;
+        height: 46px;
         padding: 1rem;
-        border-radius: 1rem;
+        border-radius: 100%;
         border: 0;
     }
 
     &::scroll-button(right) {
-        content: ">";
+        content: "\f0da";
         position-area: center right;
     }
 
     &::scroll-button(left) {
-        content: "<";
+        content: "\f0d9";
         position-area: center left;
     }
 }
