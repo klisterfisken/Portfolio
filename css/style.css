@@ -230,11 +230,11 @@ nav {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 100%;
-    width: auto;
+    gap: 2rem;
+    width: 100%;
     max-width: 360px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    scroll-padding-inline: 15px;
     scroll-behavior: smooth;
 
     anchor-name: --carousel;
@@ -265,17 +265,18 @@ nav {
     &::scroll-button(right) {
         content: "\f0da";
         position-area: center right;
+        corner-shape: round bevel bevel round;
     }
 
     &::scroll-button(left) {
         content: "\f0d9";
         position-area: center left;
+        corner-shape: bevel round round bevel;
     }
 }
 
 .quote-card {
     width: auto;
-    max-width: 340px;
     padding: 60px 30px 50px;
     border-radius: 32px;
     background-color: var(--dim-purple);
@@ -283,7 +284,7 @@ nav {
     position: relative;
     text-align: center;
     align-content: center;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 }
 
 .quote-card::scroll-marker {
