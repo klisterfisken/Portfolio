@@ -260,6 +260,11 @@ nav {
         padding: 1rem;
         border-radius: 100%;
         border: 0;
+        z-index: 1;
+    }
+
+    &::scroll-button(*):disabled {
+        display: none;
     }
 
     &::scroll-button(right) {
