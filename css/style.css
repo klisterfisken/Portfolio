@@ -226,6 +226,21 @@ nav {
     align-items: center;
     justify-content: center;
 
+    @media (aspect-ratio > 10/7) {
+        align-items: flex-end;
+    }
+
+}
+
+.quote-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (aspect-ratio > 10/7) {
+        min-width: 40vw;
+        margin-right: 3%;
+    }
 }
 
 .quote-carousel {
