@@ -18,6 +18,8 @@ window.addEventListener('scroll', () => {
 });
 
 
+
+
 const apiKey = "d43f2a110ed12f1279ce9d2dc56a6bd9";
 const city = "Uppsala";
 
@@ -74,9 +76,3 @@ function getWeaterTranslation(weatherID) {
             return "oklart väder";
     }
 }
-
-
-
-// function displayError(message){
-
-// }

@@ -55,11 +55,11 @@
             </div>
             <div class="header-divider">
                 <nav>
-                    <button class="highlight"><a href="#about-me">Om mig</a></button>
+                    <a href="#about-me"><button class="highlight">Om mig</button></a>
                     <button class="cv"><a class="download" href="/files/Hanna Schiller - CV.pdf"
                             aria-label="Ladda ner CV" download>CV</a><a href="/files/Hanna Schiller - CV.pdf"
                             aria-label="Ladda ner CV" download><i class="fa-solid fa-file-arrow-down"></i></a></button>
-                    <button><a href="#contact-me">Kontakt</a></button>
+                    <a href="#contact-me"><button>Kontakt</button></a>
                 </nav>
             </div>
         </header>
@@ -67,11 +67,11 @@
             <h1>Hanna Schiller</h1>
             <h2>&lt;developer of ideas&gt;</h2>
             <nav>
-                <button class="highlight"><a href="#about-me">Om mig</a></button>
+                <a href="#about-me"><button class="highlight">Om mig</button></a>
                 <button class="cv"><a class="download" href="/files/Hanna Schiller - CV.pdf" aria-label="Ladda ner CV"
                         download>CV</a><a href="/files/Hanna Schiller - CV.pdf" aria-label="Ladda ner CV" download><i
                             class="fa-solid fa-file-arrow-down" alt="Download CV here"></i></a></button>
-                <button><a href="#contact-me">Kontakt</a></button>
+                <a href="#contact-me"><button>Kontakt</button></a>
             </nav>
         </div>
     </div>
@@ -235,7 +235,8 @@
                 <label for="name" class="required">Namn</label>
                 <input type="text" id="name" name="Namn" placeholder="Fyll i ditt namn" required>
                 <label for="email" class="required">E-post</label>
-                <input type="email" id="email" name="E-post" placeholder="Fyll i din e-postadress" required>
+                <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" id="email" name="E-post"
+                    placeholder="Fyll i din e-postadress" required>
                 <label for="message" class="required">Meddelande</label>
                 <textarea id="message" name="Meddelande" required></textarea>
                 <input type="submit" value="Skicka">
