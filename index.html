@@ -55,11 +55,11 @@
             </div>
             <div class="header-divider">
                 <nav>
-                    <button class="highlight"><a href="#about-me">Om mig</a></button>
+                    <a href="#about-me"><button class="highlight">Om mig</button></a>
                     <button class="cv"><a class="download" href="/files/Hanna Schiller - CV.pdf"
                             aria-label="Ladda ner CV" download>CV</a><a href="/files/Hanna Schiller - CV.pdf"
                             aria-label="Ladda ner CV" download><i class="fa-solid fa-file-arrow-down"></i></a></button>
-                    <button><a href="#contact-me">Kontakt</a></button>
+                    <a href="#contact-me"><button>Kontakt</button></a>
                 </nav>
             </div>
         </header>
@@ -67,31 +67,35 @@
             <h1>Hanna Schiller</h1>
             <h2>&lt;developer of ideas&gt;</h2>
             <nav>
-                <button class="highlight"><a href="#about-me">Om mig</a></button>
+                <a href="#about-me"><button class="highlight">Om mig</button></a>
                 <button class="cv"><a class="download" href="/files/Hanna Schiller - CV.pdf" aria-label="Ladda ner CV"
                         download>CV</a><a href="/files/Hanna Schiller - CV.pdf" aria-label="Ladda ner CV" download><i
                             class="fa-solid fa-file-arrow-down" alt="Download CV here"></i></a></button>
-                <button><a href="#contact-me">Kontakt</a></button>
+                <a href="#contact-me"><button>Kontakt</button></a>
             </nav>
         </div>
     </div>
     <div class="testimonials">
-        <div class="quote-carousel">
-            <div class="quote-card">
-                <q>Hanna är en ambitiös och lojal medarbetare. Hon är strukturerad, noggrann och engagerad i sitt arbete
-                    samtidigt som hon är kreativ och lösningsorienterad.</q>
-                <p>Chef</p>
-            </div>
-            <div class="quote-card">
-                <q>Hanna är rolig att jobba med och är väldigt ordningsam, samt lär sig det hon ska kunna!</q>
-                <p>Kollega</p>
-            </div>
-            <div class="quote-card">
-                <q>Med Hanna får man en person som verkligen gör sitt bästa! Med tydliga ramar och uppsatta mål kan man
-                    lita på att hon tar sig framåt och kommer i mål med uppgiften som hon fått. Hon är engagerad och
-                    driven
-                    och vill göra bra från sig! </q>
-                <p>Kollega</p>
+        <div class="quote-display">
+            <div class="quote-carousel">
+                <div class="quote-card">
+                    <q>Hanna är en ambitiös och lojal medarbetare. Hon är strukturerad, noggrann och engagerad i sitt
+                        arbete
+                        samtidigt som hon är kreativ och lösningsorienterad.</q>
+                    <p>Chef</p>
+                </div>
+                <div class="quote-card">
+                    <q>Hanna är rolig att jobba med och är väldigt ordningsam, samt lär sig det hon ska kunna!</q>
+                    <p>Kollega</p>
+                </div>
+                <div class="quote-card">
+                    <q>Med Hanna får man en person som verkligen gör sitt bästa! Med tydliga ramar och uppsatta mål kan
+                        man
+                        lita på att hon tar sig framåt och kommer i mål med uppgiften som hon fått. Hon är engagerad och
+                        driven
+                        och vill göra bra från sig! </q>
+                    <p>Kollega</p>
+                </div>
             </div>
         </div>
     </div>
@@ -139,29 +143,37 @@
             <div class="project-card">
                 <div class="project-img-div"><img src="images/project_image.jpg" alt="Placeholder image"></div>
                 <div class="project-description">
-                    <h3>./scorekeeper</h3>
+                    <a href="https://github.com/klisterfisken/flip_7" target="_blank">
+                        <h3 class="project-link">./scorekeeper</h3>
+                    </a>
                     <p>Enkel app för att hålla koll på spelare och deras poäng i kortspelet Flip 7.</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img-div"><img src="images/project_image.jpg" alt="Placeholder image"></div>
-                <div class="project-description">
-                    <h3>./cripteria</h3>
-                    <p>App för direktmeddelanden där end to end-kryptering appliceras.</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-description">
-                    <h3>./pattern_library</h3>
-                    <p>Databas över stickbeskrivningar med möjlighet att filtrera data.</p>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-img-div"><img src="images/systementor_zoo.jpg"
                         alt="Urklipp från startsidan till Systementor Zoo"></div>
                 <div class="project-description">
-                    <h3>./systementor_zoo</h3>
+                    <a href="https://github.com/klisterfisken/Systementor-Zoo" target="_blank">
+                        <h3 class="project-link">./systementor_zoo</h3>
+                    </a>
                     <p>Skoluppgift för att testa på HTML och CSS.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-description">
+                    <a href="https://github.com/klisterfisken/pattern-library" target="_blank">
+                        <h3 class="project-link">./pattern_library</h3>
+                    </a>
+                    <p>Databas över stickbeskrivningar med möjlighet att filtrera data.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img-div"><img src="images/project_image.jpg" alt="Placeholder image"></div>
+                <div class="project-description">
+                    <a href="https://github.com/Skymt/Cripteria" target="_blank">
+                        <h3 class="project-link">./cripteria</h3>
+                    </a>
+                    <p>App för direktmeddelanden där end to end-kryptering appliceras.</p>
                 </div>
             </div>
             <div class="project-card">
@@ -223,7 +235,8 @@
                 <label for="name" class="required">Namn</label>
                 <input type="text" id="name" name="Namn" placeholder="Fyll i ditt namn" required>
                 <label for="email" class="required">E-post</label>
-                <input type="email" id="email" name="E-post" placeholder="Fyll i din e-postadress" required>
+                <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" id="email" name="E-post"
+                    placeholder="Fyll i din e-postadress" required>
                 <label for="message" class="required">Meddelande</label>
                 <textarea id="message" name="Meddelande" required></textarea>
                 <input type="submit" value="Skicka">
@@ -231,7 +244,7 @@
         </div>
     </div>
     <div class="footer">
-        <footer>
+        <footer id="footer">
             <ul class="socials">
                 <li><a href="https://github.com/klisterfisken" aria-label="Besök GitHub" target="_blank"><i
                             class="fa-brands fa-github fa-2xl"></i></a>
