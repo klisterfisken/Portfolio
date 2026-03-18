@@ -21,9 +21,10 @@ window.addEventListener('scroll', () => {
 const apiKey = "d43f2a110ed12f1279ce9d2dc56a6bd9";
 const city = "Uppsala";
 
-getWeatherData(city);
-displayWeaterInfo(data);
-
+document.addEventListener("DOMContentLoaded", async event => {
+    const weatherData = await getWeatherData(city);
+    displayWeaterInfo(weatherData);
+});
 
 async function getWeatherData(city) {
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
@@ -36,6 +37,9 @@ async function getWeatherData(city) {
 }
 
 function displayWeaterInfo(data) {
+
+    console.log(data);
+
     const { main: { temp },
         weather: [{ main, id }] } = data;
 
