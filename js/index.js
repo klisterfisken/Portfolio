@@ -33,7 +33,9 @@ async function getWeatherData(city) {
 
     const response = await fetch(apiUrl);
 
-    console.log(response);
+    if (!response.ok) {
+        throw new Error("Kunde inte hämta väder-data");
+    }
 
     return await response.json();
 }
