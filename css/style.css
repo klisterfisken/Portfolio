@@ -493,6 +493,12 @@ q:before {
     width: 100%;
 }
 
+.project-link:hover {
+    text-decoration: underline;
+}
+
+
+
 
 .techstack {
     min-height: auto;
