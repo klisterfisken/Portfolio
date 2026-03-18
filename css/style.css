@@ -225,6 +225,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .quote-carousel {
@@ -269,10 +270,6 @@ nav {
         z-index: 1;
     }
 
-    &::scroll-button(*):disabled {
-        display: none;
-    }
-
     &::scroll-button(right) {
         content: "\f105";
         position-area: center right;
@@ -281,6 +278,10 @@ nav {
     &::scroll-button(left) {
         content: "\f104";
         position-area: center left;
+    }
+
+    &::scroll-button(*):disabled {
+        display: none;
     }
 }
 
