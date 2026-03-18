@@ -45,14 +45,13 @@ function displayWeaterInfo(data) {
     console.log(data);
 
     const { main: { temp },
-        weather: [{ main, id }] } = data;
+        weather: [{ id }] } = data;
 
     const currentTemp = `${(temp - 273.15).toFixed(0)}`;
-    const weatherDescription = main;
     const weatherID = id;
 
     const weatherString = document.createElement("p");
-    weatherString.innerHTML = `Idag får jag rasta pudeln Saskia i ${currentTemp}°C och ${getWeaterTranslation(id)}.`;
+    weatherString.innerHTML = `Idag får jag rasta pudeln Saskia i ${currentTemp}°C och ${getWeaterTranslation(weatherID)}.`;
 
     weatherString.classList.add("weather");
     document.getElementById("footer").appendChild(weatherString);
