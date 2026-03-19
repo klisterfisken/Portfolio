@@ -72,6 +72,7 @@ ul {
 }
 
 button {
+    height: 56px;
     border: 0px;
     background-color: var(--powder-petal);
     color: var(--dark-amethyst);
@@ -94,7 +95,6 @@ button {
 }
 
 button.cv {
-    height: 56px;
     width: 56px;
     padding: 0;
     text-align: center;
@@ -248,7 +248,7 @@ nav {
     grid-auto-flow: column;
     grid-auto-columns: 100%;
     gap: 2rem;
-    width: 100%;
+    width: auto;
     max-width: 360px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
