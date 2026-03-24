@@ -6,6 +6,7 @@ window.addEventListener('scroll', () => {
 
     let index = Math.floor(scrollY / scrollSpeed);
 
+    if (index < 0) index = 0;
     if (index > frames.length - 1) index = frames.length - 1;
 
     frames.forEach((frame, i) => {
