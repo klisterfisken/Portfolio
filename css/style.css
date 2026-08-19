@@ -683,3 +683,16 @@ input[type=submit]:hover {
     margin-top: 50px;
     text-align: center;
 }
+
+.view-source {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--lavender-veil);
+    font-size: 0.9rem;
+    text-decoration: none;
+
+    &:hover {
+        color: var(--tangerine-dream);
+    }
+}
