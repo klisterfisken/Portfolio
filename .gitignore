@@ -1,0 +1,10 @@
+# Hemligheter
+js/config.js
+
+# OS-filer
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
