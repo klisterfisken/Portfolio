@@ -21,7 +21,7 @@ window.addEventListener('scroll', () => {
 
 
 
-const apiKey = "d43f2a110ed12f1279ce9d2dc56a6bd9";
+const apiKey = CONFIG.weatherApiKey;
 const city = "Uppsala";
 
 document.addEventListener("DOMContentLoaded", async event => {
