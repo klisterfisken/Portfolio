@@ -24,3 +24,15 @@ Not using any framework, I've styled the website using variables for colours, an
 
 ### JavaScript:  
 I have used JavaScript as little as possible, mostly to push the limits of what CSS alone can achieve. I have used two different Event Listeners: The header scroll animation is one of them and calling weather API on page load is the other.
+
+### Deployment:
+The site is deployed via GitHub Pages using a GitHub Actions workflow (`.github/workflows/deploy.yml`). The OpenWeatherMap API key used for the footer weather text is stored as a repository secret and injected into `js/config.js` at build time, so it's never committed to the repository.
+
+### Running locally:
+To run the weather feature locally, create a `js/config.js` file (gitignored) with:
+
+\`\`\`js
+const CONFIG = {
+    weatherApiKey: "your-openweathermap-api-key"
+};
+\`\`\`
